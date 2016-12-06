@@ -58,18 +58,20 @@ function islandora_collection_landing_pages_feeds_importer_default() {
           2 => array(
             'source' => 'Collection Name',
             'target' => 'title',
-            'unique' => FALSE,
+            'unique' => 1,
             'language' => 'und',
           ),
           3 => array(
             'source' => 'Body',
             'target' => 'body',
             'format' => 'full_html',
+            'language' => 'und',
           ),
           4 => array(
             'source' => 'Short Description',
             'target' => 'field_lp_short_description',
             'format' => 'full_html',
+            'language' => 'und',
           ),
           5 => array(
             'source' => 'Banner',
@@ -85,7 +87,7 @@ function islandora_collection_landing_pages_feeds_importer_default() {
           ),
         ),
         'insert_new' => '1',
-        'update_existing' => '2',
+        'update_existing' => '1',
         'update_non_existent' => 'skip',
         'input_format' => 'plain_text',
         'skip_hash_check' => 0,
